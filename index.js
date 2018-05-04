@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 
 
 app.get("/", function(req, resp){
-    resp.sendFile("./index.html");
+    resp.sendFile(__dirname+"./index.html");
 });
 
 app.get("/awesome", function(req, resp){
