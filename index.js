@@ -23,6 +23,11 @@ app.use(function (req, res, next) {
     next();
 });
 
+
+app.get("/", function(req, resp){
+    resp.sendFile("./index.html");
+});
+
 app.get("/awesome", function(req, resp){
     resp.end("YOU ARE AWESOME");
 });
